@@ -1,0 +1,37 @@
+/* ChoreoLab の公開ページ（プライバシーポリシー・利用規約）。アプリと同じ「ネオンのステージ」の色 */
+:root {
+  --bg: #0F0E14;
+  --surface: #1A1823;
+  --text: #ECEAF4;
+  --muted: #A8A4B8;
+  --primary: #9D7BFF;
+  --deep: #6C4DFF;
+  --accent: #E08BFF;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg) radial-gradient(120% 60% at 0% 0%, rgba(108, 77, 255, 0.2), rgba(15, 14, 20, 0) 70%) no-repeat;
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", sans-serif;
+  line-height: 1.85;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header img { width: 56px; height: 56px; border-radius: 14px; }
+header a { text-decoration: none; }
+.brand {
+  font-size: 26px; font-weight: 800; letter-spacing: 0.04em; margin: 0;
+  background: linear-gradient(135deg, var(--deep), var(--primary), var(--accent));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.sub { margin: 0; color: var(--muted); font-size: 13px; }
+h1 { font-size: 22px; margin: 0 0 20px; }
+h2 { font-size: 17px; margin: 28px 0 6px; color: var(--primary); }
+p { margin: 0 0 10px; overflow-wrap: anywhere; }
+a { color: var(--primary); }
+.card { background: var(--surface); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 20px; }
+.links { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; }
+.links a { display: block; padding: 14px 16px; border-radius: 12px; background: var(--surface); border: 1px solid rgba(255, 255, 255, 0.08); text-decoration: none; color: var(--text); }
+footer { margin-top: 40px; color: var(--muted); font-size: 12px; }
